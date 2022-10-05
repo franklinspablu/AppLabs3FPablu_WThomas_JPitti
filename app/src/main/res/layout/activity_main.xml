@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SumaActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Operaciones Basicas"
+            android:textSize="50px" />
+
+        <EditText
+            android:id="@+id/txtNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca segundo numero" />
+
+        <EditText
+            android:id="@+id/txtNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca segundo numero" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNum2"
+            android:entries="@array/operaciones" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Dialog"
+            android:id="@+id/cbDialog"/>
+
+        <Button
+            android:id="@+id/btnCalculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:text="Calcular" />
+
+
+        <TextView
+            android:id="@+id/lblRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50px" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

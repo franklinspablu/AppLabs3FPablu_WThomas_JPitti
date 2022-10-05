@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppLabs3FPablu_WThomas_JPitti</string>
+    
+    <string-array name="operaciones">
+        <item>Sumar</item>
+        <item>Restar</item>
+        <item>Multiplicar</item>
+        <item>Dividir</item>
+    </string-array>
+</resources>
